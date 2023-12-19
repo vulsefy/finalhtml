@@ -14,22 +14,12 @@
     let isUpdate = false, updateId;
 
     addBox.addEventListener("click", () => {
-      wrapper2.classList.add("close");
       popupTitle.innerText = "Add a Note";
       addBtn.innerText = "Add Note";
       popupBox.classList.add("show");
       document.querySelector("body").style.overflow = "hidden";
       titleTag.focus(); // Always focus on the title tag when opening the form
       bodyTag.classList.add("popup-open"); // Add class to the body when popup is opened
-    });
-
-    closeIcon.addEventListener("click", () => {
-      wrapper2.classList.remove("close");
-      isUpdate = false;
-      titleTag.value = descTag.value = "";
-      popupBox.classList.remove("show");
-
-      document.querySelector("body").style.overflow = "auto";
     });
 
     function showNotes() {
