@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Made By TASOSTHDS -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Notenest | Login</title>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: wheat;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+.google-sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for Google Sign-In button */
+.g-signin2 {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  box-shadow: 0 0 1px 5px black;
+  padding: 20px 40px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.01s ease-in-out;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Styles for Google Sign-In button */
+.g-signin2:hover {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  box-shadow: 0 0 1px 5px green;
+  padding: 20px 40px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Style for the Google Icon */
+.google-icon {
+  width: 24px; /* Adjust the width of the icon as needed */
+  height: 24px; /* Adjust the height of the icon as needed */
+  margin-right: 12px; /* Adjust the spacing between icon and text */
+}
+  </style>
+</head>
+
+<body>
+    <button id="google-login-btn" class="g-signin2" data-onsuccess="onSignIn">
+  <img src="google.png" alt="Google Icon" class="google-icon">Sign in with Google</button>
+  <script src="main.js" defer type="module"></script>
+</body>
+
+</html>
